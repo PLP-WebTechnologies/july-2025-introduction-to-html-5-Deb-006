@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Content & Form</title>
+  <meta name="description" content="Assignment on HTML5 lists, tables, media, and forms with validation.">
+  <meta name="author" content="Deborah Igbavboa">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <h1>Enhanced HTML5 Content & Mastering Forms</h1>
+    <p>A demo page showcasing lists, tables, media, and advanced HTML5 form features.</p>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- SECTION: LISTS -->
+    <section>
+      <h2>Favorite Study Resources</h2>
+      <p>Here’s a mix of ordered and unordered lists:</p>
+      <h3>Top 3 Academic Priorities (Ordered List)</h3>
+      <ol>
+        <li>Complete assignments on time</li>
+        <li>Attend lectures regularly</li>
+        <li>Participate in group discussions</li>
+      </ol>
+
+      <h3>Essential Tools for Students (Unordered List)</h3>
+      <ul>
+        <li>Laptop</li>
+        <li>Notebook</li>
+        <li>Scientific Calculator</li>
+      </ul>
+    </section>
+
+    <!-- SECTION: TABLE -->
+    <section>
+      <h2>Sample Weekly Study Schedule</h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <caption>Timetable</caption>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Course</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Industrial Chemistry</td>
+            <td>9:00 AM - 11:00 AM</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Organic Chemistry</td>
+            <td>10:00 AM - 12:00 PM</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Analytical Chemistry</td>
+            <td>1:00 PM - 3:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- SECTION: MEDIA -->
+    <section>
+      <h2>Media Showcase</h2>
+      <figure>
+        <img src="https://via.placeholder.com/300x200" alt="Sample placeholder image" width="300">
+        <figcaption>Figure 1: Placeholder image for demo.</figcaption>
+      </figure>
+
+      <h3>Audio Clip Example</h3>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video Example</h3>
+      <video width="320" height="240" controls>
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- SECTION: FORM -->
+    <section>
+      <h2>Student Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        
+        <!-- Fieldset groups related inputs -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email"><br><br>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" placeholder="+234-800-123-4567" pattern="[0-9+ -]{10,15}" required><br><br>
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Academic Details</legend>
+          <label for="department">Department:</label>
+          <input type="text" id="department" name="department" value="Industrial Chemistry" readonly><br><br>
+
+          <label for="level">Level:</label>
+          <select id="level" name="level" required>
+            <option value="">--Select--</option>
+            <option value="100">100</option>
+            <option value="200">200</option>
+            <option value="300">300</option>
+            <option value="400">400</option>
+          </select><br><br>
+
+          <label>Preferred Study Mode:</label><br>
+          <input type="radio" id="online" name="study_mode" value="Online" required>
+          <label for="online">Online</label>
+          <input type="radio" id="onsite" name="study_mode" value="Onsite">
+          <label for="onsite">Onsite</label><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Setup</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" minlength="4" maxlength="12" required placeholder="Choose a username"><br><br>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" minlength="6" required placeholder="Enter password"><br><br>
+
+          <label for="confirm">Confirm Password:</label>
+          <input type="password" id="confirm" name="confirm" minlength="6" required placeholder="Re-enter password"><br><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Details</legend>
+          <label for="bio">Short Bio:</label><br>
+          <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself..."></textarea><br><br>
+
+          <label for="hobbies">Select Hobbies (Multiple Allowed):</label><br>
+          <select id="hobbies" name="hobbies" multiple size="3">
+            <option value="reading">Reading</option>
+            <option value="sports">Sports</option>
+            <option value="music">Music</option>
+          </select>
+        </fieldset>
+
+        <br>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Enhanced HTML5 Assignment | Built by Deborah Igbavboa</p>
+  </footer>
+</body>
+</html>
